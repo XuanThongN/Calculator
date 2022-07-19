@@ -72,3 +72,6 @@ button {
 .btn-clear {
     background: red;
 }
+.btn-delete {
+    background: gold;
+}

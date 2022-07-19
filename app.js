@@ -32,7 +32,7 @@
     })
      del.addEventListener('click', function(e){
         let val = input.value
-        input.value = val.slice(0,val.length-1);
+        input.value = val.slice(0,-1);
 
     })
 })();

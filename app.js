@@ -3,6 +3,8 @@
     let buttons  = document.querySelectorAll('.btn');
     let clear  = document.querySelector('.btn-clear');
     let equal  = document.querySelector('.btn-equal');
+    let del = document.querySelector('.btn-delete');
+
 
     buttons.forEach(function(button){
         button.addEventListener('click', function type(e){
@@ -26,6 +28,11 @@
     })
     clear.addEventListener('click', function(e){
         input.value = '';
+
+    })
+     del.addEventListener('click', function(e){
+        let val = input.value
+        input.value = val.slice(0,val.length-1);
 
     })
 })();
